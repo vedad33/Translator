@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/dictionary.dtd
+
+-->
+
+
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT words (word)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT word (#PCDATA)>
+<!ATTLIST word
+    en CDATA #IMPLIED
+  >

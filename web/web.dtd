@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/web.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE web-app SYSTEM "web.dtd">
+
+    <web-app>
+    ...
+    </web-app>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT web-app (display-name|servlet|servlet-mapping)*>
+<!ATTLIST web-app
+    version CDATA #IMPLIED
+    xmlns CDATA #IMPLIED
+    xsi:schemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT display-name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT servlet (servlet-name|servlet-class|init-param|load-on-startup)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT servlet-name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT servlet-class (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT init-param (param-name|param-value)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT param-name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT param-value (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT load-on-startup (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT servlet-mapping (servlet-name|url-pattern)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT url-pattern (#PCDATA)>
